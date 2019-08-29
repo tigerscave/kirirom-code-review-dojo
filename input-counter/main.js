@@ -4,25 +4,25 @@ const minus = document.getElementById('minus')
 const plus = document.getElementById('plus')
 const reset = document.getElementById('reset')
 
-var sum = 0
+var output = 0
 
 function plusButtonClick(number){
-  sum += number
-  displaySum(sum)
+  output += number
+  displaySum(output)
 }
 
 function minusButtonClick(number){
-  sum -= number
-  displaySum(sum)
+  output -= number
+  displaySum(output)
 }
 
 function resetButtonClick(){
-  sum = 0
-  displaySum(sum)
+  output = 0
+  displaySum(output)
 }
 
-function displaySum(sum){
-  textElement.textContent = sum
+function displaySum(output){
+  textElement.textContent = output
   inputText.value = ''
 }
 
