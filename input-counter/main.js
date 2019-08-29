@@ -26,4 +26,4 @@ function reset() {
 
 plusButton.addEventListener('click', () => calculate('+'))
 minusButton.addEventListener('click', () => calculate('-'))
-resetButton.addEventListener('click', () => reset())
+resetButton.addEventListener('click', reset)
