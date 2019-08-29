@@ -2,38 +2,32 @@
 const plusButton = document.getElementById('plus')
 const minusButton = document.getElementById('minus')
 const resetButton = document.getElementById('reset')
-const emptyInput = document.getElementById('numberInput')
+const numberInput = document.getElementById('numberInput')
+const number = document.getElementById('number')
 
 function plusButtonClick()
 {
-    var number = document.getElementById('number')
-    var numberInput = Number(document.getElementById('numberInput').value)
-    num = Number(number.textContent)
-    num = num + numberInput
+    var num = Number(number.textContent) + Number(numberInput.value)
     number.textContent = num
     clearInput()
 }
 
 function minusButtonClick()
 {
-    var number = document.getElementById('number')
-    var numberInput = Number(document.getElementById('numberInput').value)
-    num = Number(number.textContent)
-    num = num - numberInput
+    var num = Number(number.textContent) - Number(numberInput.value)
     number.textContent = num
     clearInput()
 }
 
 function resetButtonClick()
 {
-    var number = document.getElementById('number')
     number.textContent = 0
     clearInput()
 }
 
 function clearInput()
 {
-    emptyInput.value = ''
+    numberInput.value = ''
 }
 plusButton.addEventListener('click', plusButtonClick)
 minusButton.addEventListener('click', minusButtonClick)
