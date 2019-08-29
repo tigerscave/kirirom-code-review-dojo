@@ -7,22 +7,22 @@ const resetButton = document.getElementById('reset')
 
 let number = 0
 
-function calculate(operator){
+function calculate(operator) {
     let input = parseInt(numberInputValue.value)
-    if(isNaN(input)){
-        input=0
+    if(isNaN(input)) {
+        input = 0
     }
     if(operator == '+') {
-        number = number + input;
+        number = number + input
     }
     else if(operator == '-') {
-        number = number - input;
+        number = number - input
     }
-    else{
-        number = 0;
+    else {
+        number = 0
     }
     numberElement.textContent = number
-    numberInputValue.value=''
+    numberInputValue.value = ''
 }
 
 plusButton.addEventListener('click', () => calculate('+'))
