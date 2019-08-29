@@ -5,25 +5,17 @@ const resetButton = document.getElementById('reset')
 const input = document.getElementById('numberInput')
 const numberElement = document.getElementById('number')
 
-
-function changeValue(text){
-	if (text == 'plus')
-	{
-		numberElement.textContent = parseInt(numberElement.textContent) + parseInt(input.value)	
-		input.value = ""
-	}
-	else if (text == 'minus')
-	{
+function changeNumber(text){
+	if (text == 'plus') {
+		numberElement.textContent = parseInt(numberElement.textContent) + parseInt(input.value)
+	} else if (text == 'minus') {
 		numberElement.textContent = parseInt(numberElement.textContent) - parseInt(input.value)
-		input.value = ""
-	}
-	else 
-	{
+	} else {
 		numberElement.textContent = "0"
 	}
-
+	input.value = ""
 }
 
-plusButton.addEventListener('click', () => changeValue('plus'))
-minusButton.addEventListener('click', () => changeValue('minus'))
-resetButton.addEventListener('click', () => changeValue('reset'))
+plusButton.addEventListener('click', () => changeNumber('plus'))
+minusButton.addEventListener('click', () => changeNumber('minus'))
+resetButton.addEventListener('click', () => changeNumber('reset'))
