@@ -8,20 +8,20 @@ var output = 0
 
 function plusButtonClick(number){
   output += number
-  displaySum(output)
+  display(output)
 }
 
 function minusButtonClick(number){
   output -= number
-  displaySum(output)
+  display(output)
 }
 
 function resetButtonClick(){
   output = 0
-  displaySum(output)
+  display(output)
 }
 
-function displaySum(output){
+function display(output){
   textElement.textContent = output
   inputText.value = ''
 }
