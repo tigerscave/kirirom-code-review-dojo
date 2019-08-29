@@ -24,4 +24,4 @@ function calculate(operation) {
 
 plusButton.addEventListener('click', () => calculate('+'))
 minusButton.addEventListener('click', () => calculate('-'))
-resetButton.addEventListener('click', () => calculate(false))
+resetButton.addEventListener('click', () => calculate(null))
