@@ -29,7 +29,6 @@ function reset() {
     inputText.focus()
 }
 
-
 resetButton.addEventListener('click', reset)
 plusButton.addEventListener('click', plusNum)
 minusButton.addEventListener('click', minusNum)
