@@ -8,16 +8,20 @@ const plusButton = document.getElementById('plus')
 const minusButton = document.getElementById('minus')
 const resetButton = document.getElementById('reset')
 
-const calculate = operation => () => {
-  operation == '+'
-    ? (output += parseInt(numberInput.value))
-    : operation == '-'
-    ? (output -= parseInt(numberInput.value))
-    : (output = 0)
-  numberElement.textContent = output;
+function calculate(operation) {
+  if (operation == '+') {
+    output += parseInt(numberInput.value)
+    numberElement.textContent = output
+  } else if (operation == '-') {
+    output -= parseInt(numberInput.value)
+    numberElement.textContent = output
+  } else {
+    output = 0
+    numberElement.textContent = output
+  }
   numberInput.value = ''
 }
 
-plusButton.addEventListener('click', calculate('+'))
-minusButton.addEventListener('click', calculate('-'))
-resetButton.addEventListener('click', calculate(false))
+plusButton.addEventListener('click', () => calculate('+'))
+minusButton.addEventListener('click', () => calculate('-'))
+resetButton.addEventListener('click', () => calculate(false))
