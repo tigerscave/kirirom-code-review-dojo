@@ -27,8 +27,8 @@ function minusButtonClick()
 
 function resetButtonClick()
 {
-    const number = document.getElementById('number')
-    const number_input = document.getElementById('numberInput')
+    var number = document.getElementById('number')
+    var number_input = document.getElementById('numberInput')
     number.textContent = 0
     number_input.value=''
 }
