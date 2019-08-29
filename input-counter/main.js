@@ -17,7 +17,8 @@ function subtract(){
     document.getElementById('numberInput').value = ""
 }
 function reset(){
-    numberElement.textContent = 0
+    sum = 0
+    numberElement.textContent = sum
     document.getElementById('numberInput').value = ""
 }
 
