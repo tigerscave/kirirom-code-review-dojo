@@ -5,7 +5,6 @@ const plusButton = document.getElementById('plus')
 const minusButton = document.getElementById('minus')
 const resetButton = document.getElementById('reset')
 let num = 0
-let x = 0
 
 function plusNum() {
     if(inputText.value != "") {
