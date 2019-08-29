@@ -15,13 +15,15 @@ function calculate(operation) {
   } else if (operation == '-') {
     output -= parseInt(numberInput.value)
     numberElement.textContent = output
-  } else {
-    output = 0
-    numberElement.textContent = output
   }
+  numberInput.value = ''
+}
+function reset() {
+  output = 0
+  numberElement.textContent = output
   numberInput.value = ''
 }
 
 plusButton.addEventListener('click', () => calculate('+'))
 minusButton.addEventListener('click', () => calculate('-'))
-resetButton.addEventListener('click', () => calculate(null))
+resetButton.addEventListener('click', () => reset())
