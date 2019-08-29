@@ -11,7 +11,6 @@ function plusButtonClick()
     num = Number(number.textContent)
     num = num + numberInput
     number.textContent = num
-    // emptyInput.value = ''
     clearInput()
 }
 
@@ -22,16 +21,13 @@ function minusButtonClick()
     num = Number(number.textContent)
     num = num - numberInput
     number.textContent = num
-    // emptyInput.value = ''
     clearInput()
 }
 
 function resetButtonClick()
 {
     var number = document.getElementById('number')
-    // var numberInput = document.getElementById('numberInput')
     number.textContent = 0
-    // numberInput.value=''
     clearInput()
 }
 
