@@ -8,25 +8,20 @@ const	resetButton = document.getElementById("reset");
 const	textElement = document.getElementById("text")
 
 function appleButtonClick() {
-	// body...
 	textElement.textContent = 'APPLE';
 }
 
 function bananaButtonClick() {
-	// body...
 	textElement.textContent='BANNA';
 }
 
 function orangeButtonClick() {
-	// body...
 	textElement.textContent='ORANGE';
 }
 
 function resetButtonClick() {
-	// body...
 	textElement.textContent='-';
 }
-
 
 appleButton.addEventListener('click',appleButtonClick);
 bananaButton.addEventListener('click',bananaButtonClick);
