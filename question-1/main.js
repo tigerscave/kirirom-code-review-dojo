@@ -12,7 +12,7 @@ function appleButtonClick() {
 }
 
 function bananaButtonClick() {
-	textElement.textContent='BANNA';
+	textElement.textContent='BANANA';
 }
 
 function orangeButtonClick() {
