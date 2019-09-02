@@ -20,5 +20,5 @@ minusBtn.addEventListener('click',()=>{
 
 resetBtn.addEventListener('click',()=>{ 
     number = 0;
-    displayNumber.textContent = number;
+    numberElement.textContent = number;
 });
