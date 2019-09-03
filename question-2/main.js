@@ -1,16 +1,16 @@
+const plusButton = document.getElementById('plus');
+const minusButton = document.getElementById('minus');
+const resetButton = document.getElementById('reset');
 let number = 0;
-document.getElementById('plus').addEventListener("click", function(){
+plusButton.addEventListener("click", function(){
   number++;
-  calculate("add");
+  document.getElementById('number').innerHTML = number;
 })
-document.getElementById('minus').addEventListener("click", function(){
+minusButton.addEventListener("click", function(){
   number--;
-  calculate("add");
+  document.getElementById('number').innerHTML = number;
 })
-document.getElementById('reset').addEventListener("click", function(){
+resetButton.addEventListener("click", function(){
   number = 0;
-  calculate("add");
+  document.getElementById('number').innerHTML = number;
 })
-function calculate(x){
-    document.getElementById('number').innerHTML = number;
-}
