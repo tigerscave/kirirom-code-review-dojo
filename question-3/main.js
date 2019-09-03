@@ -25,4 +25,5 @@ minusBtn.addEventListener("click", () => {
 
 resetBtn.addEventListener("click", () => { 
     numberElement.textContent = 0
-    numberInput.textContent = 0 }) 
+    numberInput.textContent = 0 
+}) 
