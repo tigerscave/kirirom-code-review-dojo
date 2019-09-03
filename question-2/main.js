@@ -1,11 +1,11 @@
 "use strict"
+"use strict"
 
 //write code in here
-
 const textNumber = document.getElementById("number")
-const increment = document.getElementById("plus")
-const decrement = document.getElementById("minus")
-const reset = document.getElementById("reset")
+const plusBtn = document.getElementById("plus")
+const minusBtn = document.getElementById("minus")
+const resetBtn = document.getElementById("reset")
 
 increment.addEventListener('click', () => { textNumber.innerHTML++ })
 decrement.addEventListener('click', () => { textNumber.innerHTML-- })
