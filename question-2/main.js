@@ -5,8 +5,25 @@ const plusBtn = document.getElementById("plus")
 const minusBtn = document.getElementById("minus")
 const resetBtn = document.getElementById("reset")
 
-const number = document.getElementById("number")
+const numberText = document.getElementById("number")
 
-plusBtn.addEventListener("click",() => number.innerHTML = parseInt(number.innerHTML) + 1)
-minusBtn.addEventListener("click",() => number.innerHTML = parseInt(number.innerHTML) - 1)
-resetBtn.addEventListener("click" , () => number.innerHTML = 0)
+function changeNumber(opr) {
+    let currentNum = parseInt(numberText.innerHTML)
+    switch(opr){
+        case "+":
+            numberText.innerHTML = currentNum + 1
+            break;
+    
+        case "-":
+            numberText.innerHTML = currentNum - 1
+            break;
+
+        case "reset" :
+            numberText.innerHTML = 0
+            break;
+    }
+}
+
+plusBtn.addEventListener("click",() => changeNumber("+"))
+minusBtn.addEventListener("click",() => changeNumber("-"))
+resetBtn.addEventListener("click" ,() => changeNumber("reset"))
