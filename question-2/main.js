@@ -5,7 +5,7 @@ const text = document.getElementById('number');
 
 var number = parseInt(document.getElementById('number').innerText);
 
-function calculate(n){
+function calculate(number){
 	text.textContent = number;
 
 }
