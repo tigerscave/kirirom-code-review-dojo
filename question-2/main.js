@@ -1,13 +1,12 @@
 "use strict"
 
 //write code in here
-const plusButt = document.getElementById("plus")
-const minusButt = document.getElementById("minus")
-const resetButt = document.getElementById("reset")
+const plusBtn = document.getElementById("plus")
+const minusBtn = document.getElementById("minus")
+const resetBtn = document.getElementById("reset")
 
 const number = document.getElementById("number")
 
-plusButt.addEventListener("click",() => number.innerHTML = parseInt(number.innerHTML) + 1)
-minusButt.addEventListener("click",() => number.innerHTML = parseInt(number.innerHTML) - 1)
-resetButt.addEventListener("click",() => number.innerHTML = 0)
-
+plusBtn.addEventListener("click",() => number.innerHTML = parseInt(number.innerHTML) + 1)
+minusBtn.addEventListener("click",() => number.innerHTML = parseInt(number.innerHTML) - 1)
+resetBtn.addEventListener("click" , () => number.innerHTML = 0)
