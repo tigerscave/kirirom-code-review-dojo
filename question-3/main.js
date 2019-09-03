@@ -9,7 +9,6 @@ const resetBtn = document.getElementById("reset")
 let displayedNumber = 0
 let inputNumber = 0
 
-
 plusBtn.addEventListener("click", () => {
     inputNumber = parseInt(numberInput.value)
     displayedNumber = parseInt(numberElement.textContent)
