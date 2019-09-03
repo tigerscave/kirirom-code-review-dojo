@@ -1,13 +1,14 @@
-const plusbtn = document.getElementById("plus")
-const minusbtn = document.getElementById("minus")
-const resetbtn = document.getElementById("reset")
-const numberbtn = document.getElementById("number")
+const plusButton = document.getElementById("plus")
+const minusButton = document.getElementById("minus")
+const resetButton = document.getElementById("reset")
+const numberElement = document.getElementById("number")
 
 
 var number = 0
-plusbtn.addEventListener("click", ()=> {numberbtn.textContent=++number})
-minusbtn.addEventListener("click", ()=> {numberbtn.textContent=--number})
-resetbtn.addEventListener("click", ()=> {numberbtn.textContent=0})
+
+plusButton.addEventListener("click", ()=> {numberelement.textContent=++number})
+minusButton.addEventListener("click", ()=> {numberelement.textContent=--number})
+resetButton.addEventListener("click", ()=> {numberelement.textContent=0})
 
 
 
