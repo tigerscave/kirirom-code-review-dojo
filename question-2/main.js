@@ -6,9 +6,9 @@ const numberElement = document.getElementById("number")
 
 var number = 0
 
-plusButton.addEventListener("click", ()=> {numberelement.textContent=++number})
-minusButton.addEventListener("click", ()=> {numberelement.textContent=--number})
-resetButton.addEventListener("click", ()=> {numberelement.textContent=0})
+plusButton.addEventListener("click",() => {numberelement.textContent = ++number})
+minusButton.addEventListener("click",() => {numberelement.textContent = --number})
+resetButton.addEventListener("click",() => {numberelement.textContent = 0})
 
 
 
