@@ -2,19 +2,19 @@
 
 //write code in here
 
-var i = 0
+let number = 0
 document.getElementById('plus').addEventListener('click',function()
 {
-    i++;
-    document.getElementById('number').innerHTML = i
+    number++;
+    document.getElementById('number').innerHTML = number
 })
 document.getElementById('minus').addEventListener('click',function()
 {
-    i--;
-    document.getElementById('number').innerHTML = i
+    number--;
+    document.getElementById('number').innerHTML = number
 })
 document.getElementById('reset').addEventListener('click',function()
 {
-    i = 0;
-    document.getElementById('number').innerHTML =  i
+    number = 0
+    document.getElementById('number').innerHTML = number
 })
