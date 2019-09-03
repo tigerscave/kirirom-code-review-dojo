@@ -10,18 +10,16 @@ function operate(operator)
 	if(operator === "plus")
 	{
 		numberElement.textContent = parseInt(numberElement.textContent) + parseInt(input.value)
-		input.value = ""
 	}
 	else if(operator === "minus")
 	{
 		numberElement.textContent = parseInt(numberElement.textContent) - parseInt(input.value)
-		input.value = ""
 	}
 	else if(operator === "reset")
 	{
 		numberElement.textContent = 0
-		input.value = ""
 	}
+	input.value = ""
 }
 
 plusButton.addEventListener('click', () => operate("plus"))
