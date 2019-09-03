@@ -6,17 +6,19 @@ const numberInput = document.getElementById("numberInput")
 const plusBtn = document.getElementById("plus")
 const minusBtn = document.getElementById("minus")
 const resetBtn = document.getElementById("reset")
+let displayedNumber = 0
+let inputNumber = 0
 
 plusBtn.addEventListener("click", () => { 
-    let userInput = parseInt(numberInput.value)
-    let displayNumber = parseInt(number.textContent)
+    inputNumber = parseInt(numberInput.value)
+    displayedNumber = parseInt(number.textContent)
     number.textContent = displayNumber + userInput
     numberInput.value = 0
 })
 
 minusBtn.addEventListener("click", () => { 
-    let userInput = parseInt(numberInput.value)
-    let displayNumber = parseInt(number.textContent)
+    numberInput = parseInt(numberInput.value)
+    displayedNumber = parseInt(number.textContent)
     number.textContent = displayNumber - userInput
     numberInput.value = 0
  })
