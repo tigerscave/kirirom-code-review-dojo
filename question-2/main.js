@@ -13,20 +13,20 @@ const addTenButton = document.getElementById('ten')
 const numberElement = document.getElementById('number')
 
 function plus(){
-	number.textContent = parseInt(number.textContent) + 1
+	numberElement.textContent = parseInt(number.textContent) + 1
 }
 
 function minus(){
-	number.textContent = parseInt(number.textContent) - 1
+	numberElement.textContent = parseInt(number.textContent) - 1
 }
 
 function reset(){
-	number.textContent = 0
+	numberElement.textContent = 0
 }
 
-function add(num)
+function add(number)
 {
-	number.textContent = parseInt(number.textContent) + num
+	numberElement.textContent = parseInt(numberElement.textContent) + number
 }
 
 plusButton.addEventListener('click', plus)
