@@ -2,10 +2,17 @@
 
 //write code in here
 
+for(let i = 2; i <= 10; i++){
+    var button = document.createElement("BUTTON")
+    button.textContent = i
+    document.body.appendChild(button)
+}
+
 const plusButton = document.getElementById('plus')
 const minusButton = document.getElementById('minus')
 const resetButton = document.getElementById('reset')
 const textElement = document.getElementById('number')
+const numberTwoButton = document.getElementById('numberTwo')
 
 let number = 0
 function changeValue(operation){
@@ -18,6 +25,10 @@ function changeValue(operation){
             break
         case "reset":
             number = 0
+            break
+        case "two":
+            number += 2
+            break
     }
     textElement.textContent = number
 }
@@ -25,3 +36,4 @@ function changeValue(operation){
 plusButton.addEventListener('click', () => changeValue("plus"))
 minusButton.addEventListener('click', () => changeValue("minus"))
 resetButton.addEventListener('click', () => changeValue("reset"))
+numberTwoButton.addEventListener('click', () => changeValue("numberTwo"))
