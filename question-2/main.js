@@ -7,14 +7,14 @@ const minusBtn = document.getElementById("minus")
 const resetBtn = document.getElementById("reset")
 let value = 0
 
-plusBtn.addEventListener("click", function(){
+plusBtn.addEventListener("click", () =>{
     number.textContent = value++
 })
 
-minusBtn.addEventListener("click", function(){
+minusBtn.addEventListener("click", () => {
     number.textContent = value--
 })
 
-resetBtn.addEventListener("click", function(){
+resetBtn.addEventListener("click", () => {
     number.textContent = 0
 }) 
