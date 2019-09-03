@@ -36,7 +36,13 @@ function resetInputAndShowNumber(resultNumber) {
 function validateNumberInput(numberInput) {
     if (isNaN(numberInput.value)) {
         alert("Invalid Error");
-    } else if (numberInput.value != "") {
+        return false
+    }
+
+    if (numberInput.value != "") {
         return true
     }
+
+    return false
+
 }
