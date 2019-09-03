@@ -1,6 +1,6 @@
 "use strict"
 
-// write conde in here
+// write code in here
 const appleButton = document.getElementById('apple')
 const bananaButton = document.getElementById('banana')
 const orangeButton = document.getElementById('orange')
@@ -11,6 +11,7 @@ const textElement = document.getElementById('text')
 function changeText(text){
     textElement.textContent = text;
 }
+
 appleButton.addEventListener('click', () => changeText('APPLE'))
 bananaButton.addEventListener('click', () => changeText('BANANA'))
 orangeButton.addEventListener('click', () => changeText('ORANGE'))
