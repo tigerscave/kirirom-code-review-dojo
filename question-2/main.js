@@ -19,7 +19,7 @@ function ChangeValue(operation){
         case resetButton:
             number = 0
     }
-    textElement.innerHTML = num
+    textElement.innerHTML = number
 
 }
 
