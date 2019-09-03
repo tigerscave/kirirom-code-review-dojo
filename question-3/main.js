@@ -12,25 +12,23 @@ let inputNumber = 0
 plusBtn.addEventListener("click", () => {
     inputNumber = parseInt(numberInput.value)
     displayedNumber = parseInt(numberElement.textContent)
+    numberInput.value = 0
     if(isNaN(inputNumber)){
         alert("Invalid error")
+        return
     }
-    else{
-        numberElement.textContent = displayedNumber + inputNumber
-        numberInput.value = 0
-    }
+    numberElement.textContent = displayedNumber + inputNumber
 })
 
 minusBtn.addEventListener("click", () => { 
     inputNumber = parseInt(numberInput.value)
     displayedNumber = parseInt(numberElement.textContent)
+    numberInput.value = 0
     if(isNaN(inputNumber)){
         alert("Invalid error")
+        return
     }
-    else{
-        numberElement.textContent = displayedNumber - inputNumber
-        numberInput.value = 0
-    }
+    numberElement.textContent = displayedNumber - inputNumber
 })
 
 resetBtn.addEventListener("click", () => { 
