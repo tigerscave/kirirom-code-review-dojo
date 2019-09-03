@@ -16,7 +16,7 @@ function plusNum () {
   let num = parseInt(textView.textContent);
   textView.textContent = num + 1;
 }
-function MinusNum () {
+function minusNum () {
   let num = parseInt(textView.textContent);
   textView.textContent = num - 1;
 }
