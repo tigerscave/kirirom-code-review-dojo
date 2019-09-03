@@ -7,9 +7,9 @@ const resetButton = document.getElementById("reset");
 const text = document.getElementById("number");
 var number = parseInt(document.getElementById("number").innerText);
 
-function calculate(number) {
+function displayResult(number) {
   text.textContent = number;
 }
-increaseButton.addEventListener("click", () => calculate((number += 1)));
-decreaseButton.addEventListener("click", () => calculate((number -= 1)));
-resetButton.addEventListener("click", () => calculate(0));
+increaseButton.addEventListener("click", () => displayResult(number += 1));
+decreaseButton.addEventListener("click", () => displayResult(number -= 1));
+resetButton.addEventListener("click", () => displayResult(0));
