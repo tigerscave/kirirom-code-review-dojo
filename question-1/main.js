@@ -24,7 +24,13 @@ function orangeButtonClick(){
 function resetButtonClick(){
 	textElement.textContent = "-"
 }
-appleButton.addEventListener('click', appleButtonClick)
-bananaButton.addEventListener('click', bananaButtonClick)
-orangeButton.addEventListener('click', orangeButtonClick)
-resetButton.addEventListener('click', resetButtonClick)
+
+function changeText(text)
+{
+	textElement.textContent = text;
+}
+
+appleButton.addEventListener('click', () => changeText('APPLE'))
+bananaButton.addEventListener('click', () => changeText('BANANA'))
+orangeButton.addEventListener('click', () => changeText('ORANGE'))
+resetButton.addEventListener('click', () => changeText('-'))
