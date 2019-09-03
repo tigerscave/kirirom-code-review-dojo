@@ -27,8 +27,11 @@ function changeValue(e){
         case addButton:
             number += numberInputValue
             break
-        case resetButton:
+        case resetButton:{
             number = 0
+            numberInput.value = ""
+        }
+            
             break
     }
     numberText.textContent = number
