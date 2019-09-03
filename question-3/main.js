@@ -10,9 +10,16 @@ const numberElement = document.getElementById('number')
 
 let number = 0
 function changeValue(operation){
-    let inputValue = 1
-    if(numberInput.value.length  != 0) 
-        inputValue = parseInt(numberInput.value)
+
+    let inputValue = parseInt(numberInput.value)
+    if(Number.isNaN(inputValue)) {
+        if(numberInput.value.lenght == 0){
+            inputValue = 0
+        } else {
+            window.alert("Invalid Value")
+            return
+        }
+    }
     switch(operation){
         case "plus":
             number += inputValue
