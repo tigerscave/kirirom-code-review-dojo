@@ -2,15 +2,19 @@
 
 //write code in here
 const number = document.getElementById("number")
-const numberInput = document.getElementById("numberInput")
 const plusBtn = document.getElementById("plus")
 const minusBtn = document.getElementById("minus")
 const resetBtn = document.getElementById("reset")
-var inputValue = parseInt(numberInput.value)
-var displayValue = parseInt(number.innerHTML)
+let value = 0
 
-plusBtn.addEventListener("click", () => { number.innerHTML = displayValue + inputValue })
+plusBtn.addEventListener("click", function(){
+    number.textContent = value++
+})
 
-minusBtn.addEventListener("click", () => { number.innerHTML = displayValue - inputValue })
+minusBtn.addEventListener("click", function(){
+    number.textContent = value--
+})
 
-resetBtn.addEventListener("click", () => { number.innerHTML = 0 }) 
+resetBtn.addEventListener("click", function(){
+    number.textContent = 0
+}) 
