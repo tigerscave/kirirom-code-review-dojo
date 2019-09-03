@@ -3,8 +3,7 @@ const minusButton = document.getElementById("minus")
 const resetButton = document.getElementById("reset")
 const numberElement = document.getElementById("number")
 
-
-var number = 0
+let number = 0
 
 plusButton.addEventListener("click",() => {numberelement.textContent = ++number})
 minusButton.addEventListener("click",() => {numberelement.textContent = --number})
