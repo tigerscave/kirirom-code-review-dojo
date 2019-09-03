@@ -15,16 +15,18 @@ function reset () {
   textView.textContent = 0;
   editTextValue.value = '';
 }
-
-let currNum = 0;
 function plusNum () {
-  currNum = parseInt(textView.textContent);
-  textView.textContent = currNum + parseInt(editTextValue.value);
-  editTextValue.value = '';
+  if (editTextValue.value) {
+    const currNum = parseInt(textView.textContent);
+    textView.textContent = currNum + parseInt(editTextValue.value);
+    editTextValue.value = '';
+  }
 }
 function minusNum () {
-  currNum = parseInt(textView.textContent);
-  textView.textContent = currNum - parseInt(editTextValue.value);
-  editTextValue.value = '';
+  if (editTextValue.value) {
+    const currNum = parseInt(textView.textContent);
+    textView.textContent = currNum - parseInt(editTextValue.value);
+    editTextValue.value = '';
+  }
 }
 // write code in here
