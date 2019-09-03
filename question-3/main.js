@@ -5,12 +5,15 @@ const inputedNumber = document.getElementById('numberInput')
 const numberElement = document.getElementById('number')
 let firstValue = 0
 let secondValue = 0
-let result = 0
 let direction =0
 plusButton.addEventListener('click',function()
 { 
     if (direction == 0) {
     	firstValue = parseInt(inputedNumber.value)
+    	if (isNaN(firstValue)) {
+    		alert("Invalid number")
+    		reset()
+    	}
     	numberElement.innerHTML = firstValue
     	inputedNumber.value = " ";
     	direction++;
@@ -41,10 +44,12 @@ minusButton.addEventListener('click',function()
 })
 resetButton.addEventListener('click',function()
 {
-    firstValue = 0
+    reset()
+})
+function reset(){
+	firstValue = 0
     secondValue = 0
     direction = 0
-    result = 0
     inputedNumber.value = " "
     numberElement.innerHTML = 0
-})
+}
