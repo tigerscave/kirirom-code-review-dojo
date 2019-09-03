@@ -16,15 +16,3 @@ function buttonClicked(operation){
 plusButton.addEventListener('click', () => buttonClicked("plus"));
 minusButton.addEventListener('click', () => buttonClicked("minus"));
 resetButton.addEventListener('click', () => buttonClicked("reset"));
-
-// const numberElement = document.getElementById('number');
-
-// document.getElementById('plus').addEventListener('click', () => {
-//     numberElement.textContent = parseInt(numberElement.textContent) + 1;
-// });
-// document.getElementById('minus').addEventListener('click', () => {
-//     numberElement.textContent = parseInt(numberElement.textContent) - 1;
-// });
-// document.getElementById('reset').addEventListener('click', () => {
-//     numberElement.textContent = 0;
-// });
