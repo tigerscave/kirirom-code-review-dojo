@@ -5,14 +5,26 @@
 const plusButton = document.getElementById('plus');
 const minusButton = document.getElementById('minus');
 const resetButton = document.getElementById('reset');
-const textElement = document.getElementById('number')
+const numberElement = document.getElementById('number')
 
-function buttonClicked(res){
-    if (res == 'plus') textElement.textContent = parseInt(textElement.innerHTML) + 1;
-    else if (res == 'minus') textElement.textContent = parseInt(textElement.innerHTML) - 1;
-    else if (res == 'reset') textElement.textContent = 0;
+function buttonClicked(operation){
+    if (operation == 'plus') numberElement.textContent = parseInt(numberElement.innerHTML) + 1;
+    else if (operation == 'minus') numberElement.textContent = parseInt(numberElement.innerHTML) - 1;
+    else if (operation == 'reset') numberElement.textContent = 0;
 }
 
 plusButton.addEventListener('click', () => buttonClicked("plus"));
 minusButton.addEventListener('click', () => buttonClicked("minus"));
 resetButton.addEventListener('click', () => buttonClicked("reset"));
+
+// const numberElement = document.getElementById('number');
+
+// document.getElementById('plus').addEventListener('click', () => {
+//     numberElement.textContent = parseInt(numberElement.textContent) + 1;
+// });
+// document.getElementById('minus').addEventListener('click', () => {
+//     numberElement.textContent = parseInt(numberElement.textContent) - 1;
+// });
+// document.getElementById('reset').addEventListener('click', () => {
+//     numberElement.textContent = 0;
+// });
