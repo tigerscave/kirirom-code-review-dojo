@@ -2,10 +2,10 @@ const plusButton = document.getElementById('plus')
 const minusButton = document.getElementById('minus')
 const resetButton = document.getElementById('reset')
 const numberElement = document.getElementById('number')
-
+let input = document.getElementById('numberInput')
 function operation(operator)
 {
-	let input = document.getElementById('numberInput')
+	
 	if(operator == "plus")
 	{
 		numberElement.textContent = parseInt(numberElement.textContent) + parseInt(input.value)
