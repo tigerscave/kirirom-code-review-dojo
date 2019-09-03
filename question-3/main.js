@@ -6,19 +6,27 @@ const input = document.getElementById('numberInput')
 
 function operate(operator)
 {
-	if(operator === "plus")
+	if(isNaN(input.value))
 	{
-		numberElement.textContent = parseInt(numberElement.textContent) + parseInt(input.value)
+		alert("Invalid error")
+		input.value=" "
 	}
-	else if(operator === "minus")
+	else
 	{
-		numberElement.textContent = parseInt(numberElement.textContent) - parseInt(input.value)
+		if(operator === "plus")
+		{
+			numberElement.textContent = parseInt(numberElement.textContent) + parseInt(input.value)
+		}
+		else if(operator === "minus")
+		{
+			numberElement.textContent = parseInt(numberElement.textContent) - parseInt(input.value)
+		}
+		else if(operator === "reset")
+		{
+			numberElement.textContent = 0
+		}
+		input.value = ""
 	}
-	else if(operator === "reset")
-	{
-		numberElement.textContent = 0
-	}
-	input.value = ""
 }
 
 plusButton.addEventListener('click', () => operate("plus"))
