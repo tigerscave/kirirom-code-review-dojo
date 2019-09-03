@@ -10,12 +10,12 @@ const textResult = document.getElementById('number')
 let number = 0 
 let getNumber = 0
 
-function changeSign(sign){
+function changeOperator(Operator){
   
-    getNumber=parseInt(document.getElementById('numberInput').value)
-    number=parseInt(document.getElementById('number').innerText)
+    getNumber = parseInt(document.getElementById('numberInput').value)
+    number = textResult
   
-    switch(sign){
+    switch(Operator){
         case '+':
             number += getNumber
             break
@@ -30,6 +30,6 @@ function changeSign(sign){
     textResult.textContent=number
 }
 
-plusButton.addEventListener('click', ()=> changeSign('+'))
-minusButton.addEventListener('click', ()=> changeSign('-'))
-resetButton.addEventListener('click', ()=> changeSign('reset'))
+plusButton.addEventListener('click', ()=> changeOperator('+'))
+minusButton.addEventListener('click', ()=> changeOperator('-'))
+resetButton.addEventListener('click', ()=> changeOperator('reset'))
