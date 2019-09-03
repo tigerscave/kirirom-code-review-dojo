@@ -7,9 +7,9 @@ const addButton = document.getElementById("plus")
 const resetButton = document.getElementById("reset")
 const numberText = document.getElementById("number")
 
-var n = 0
+let n = 0
 
-function ChangeVaule(operationButton){
+function changeVaule(operationButton){
     switch(operationButton)
     {
         case minusButton:
@@ -25,6 +25,6 @@ function ChangeVaule(operationButton){
     numberText.innerHTML = n
 }
 
-addButton.addEventListener("click", () => ChangeVaule(addButton))
-minusButton.addEventListener("click", () => ChangeVaule(minusButton))
-resetButton.addEventListener("click", () => ChangeVaule(resetButton))
+addButton.addEventListener("click", () => changeVaule(addButton))
+minusButton.addEventListener("click", () => changeVaule(minusButton))
+resetButton.addEventListener("click", () => changeVaule(resetButton))
