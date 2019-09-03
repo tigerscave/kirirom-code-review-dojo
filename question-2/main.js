@@ -5,7 +5,7 @@ const numberElement = document.getElementById('number');
 
 var i;
 for (i = 2; i <= 10; i++){
-    var button = document.createElement("button");
+    let button = document.createElement("button");
     button.innerHTML = i;
     button.id = i;
     button.style = "width: 50px; margin: 5px;";
