@@ -26,6 +26,7 @@ function changeValue(e){
     numberText.textContent = n
 }
 
+
 addButton.addEventListener("click", changeValue)
 minusButton.addEventListener("click", changeValue)
 resetButton.addEventListener("click", changeValue)
