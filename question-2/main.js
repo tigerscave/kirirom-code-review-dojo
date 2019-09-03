@@ -8,7 +8,7 @@ const resetBtn = document.getElementById("reset")
 for (let i = 2; i < 11; i++) {
     var btn = document.createElement("BUTTON");
     btn.innerHTML = `${i}`;
-    btn.setAttribute("onClick", `changeNum(${i})`)
+    btn.addEventListener('click', () => { changeNum(i) })
     document.body.appendChild(btn);
 }
 
