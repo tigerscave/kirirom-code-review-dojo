@@ -8,7 +8,7 @@ let getNumber = 0
 
 function changeSign(sign){
     getNumber=parseInt(document.getElementById('numberInput').value)
-    number=parseInt(document.getElementById('number').innerText)
+    number=parseInt(textResult.innerText)
     switch(sign){
         case '+':
             number+=getNumber
