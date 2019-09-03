@@ -5,8 +5,8 @@ const minusBtn = document.getElementById('minus');
 const resetBtn = document.getElementById('reset');
 const textView = document.getElementById('number');
 
-plusBtn.addEventListener('click', () => plusNum());
-minusBtn.addEventListener('click', () => minusNum());
+plusBtn.addEventListener('click', plusNum);
+minusBtn.addEventListener('click', minusNum);
 resetBtn.addEventListener('click', reset);
 
 function reset () {
