@@ -5,28 +5,26 @@ const plusBtn = document.getElementById('plus');
 const minusBtn = document.getElementById('minus');
 const resetBtn = document.getElementById('reset');
 const textView = document.getElementById('number');
-const editTextValue = document.getElementById('numberInput');
+const editText = document.getElementById('numberInput');
 
-plusBtn.addEventListener('click', () => plusNum());
-minusBtn.addEventListener('click', () => minusNum());
+plusBtn.addEventListener('click', plusNum);
+minusBtn.addEventListener('click', minusNum);
 resetBtn.addEventListener('click', reset);
 
 function reset () {
   textView.textContent = 0;
-  editTextValue.value = '';
+  editText.value = '';
 }
 function plusNum () {
-  if (editTextValue.value) {
-    const currNum = parseInt(textView.textContent);
-    textView.textContent = currNum + parseInt(editTextValue.value);
-    editTextValue.value = '';
+  if (editText.value) {
+    textView.textContent = parseInt(textView.textContent) + parseInt(editText.value);
+    editText.value = '';
   }
 }
 function minusNum () {
-  if (editTextValue.value) {
-    const currNum = parseInt(textView.textContent);
-    textView.textContent = currNum - parseInt(editTextValue.value);
-    editTextValue.value = '';
+  if (editText.value) {
+    textView.textContent = parseInt(textView.textContent) - parseInt(editText.value);
+    editText.value = '';
   }
 }
 // write code in here
