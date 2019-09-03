@@ -12,7 +12,7 @@ let inputNumber = 0;
 function calculateAndDisplay(sign) {
     number = parseInt(displayedNumber.innerText);
     inputNumber = parseInt(getNumber.value);
-    if (isNaN(inputNumber) || Number.isInteger(inputNumber)) {
+    if (isNaN(inputNumber) || Number.isInteger(inputNumber) == false) {
         alert("Invalid Error");
         getNumber.value = "";
     } else {
