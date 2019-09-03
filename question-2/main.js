@@ -10,19 +10,19 @@ const textElement = document.getElementById('number')
 let num = 0
 function ChangeValue(operation){
     switch(operation){
-        case "plus":
+        case plusButton:
             num+=1
             break
-        case "minus":
+        case minusButton:
             num-=1
             break
-        case "reset":
+        case resetButton:
             num = 0
     }
     textElement.innerHTML = num
 
 }
 
-plusButton.addEventListener('click', () => ChangeValue("plus"))
-minusButton.addEventListener('click', () => ChangeValue("minus"))
-resetButton.addEventListener('click',() => ChangeValue("reset"))
+plusButton.addEventListener('click', () => ChangeValue(plusButton))
+minusButton.addEventListener('click', () => ChangeValue(minusButton))
+resetButton.addEventListener('click',() => ChangeValue(resetButton))
