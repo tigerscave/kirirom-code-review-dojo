@@ -1,25 +1,34 @@
 const addButton = document.getElementById('plus');
 const minusButton = document.getElementById('minus');
 const resetButton = document.getElementById('reset');
-const text = document.getElementById('number');
+const displayedNumber = document.getElementById('number');
+const getNumber = document.getElementById('numberInput');
 
 let number = 0;
 let inputNumber = 0;
 
 function calculateAndDisplay(sign){
-	number = parseInt(document.getElementById('number').innerText);
-	inputNumber = parseInt(document.getElementById('numberInput').value);
-	if(sign=="+"){
-		number+=inputNumber;
-	}
-	else if(sign=="-"){
-		number-=inputNumber;
+	number = parseInt(displayedNumber.innerText);
+	inputNumber = parseInt(getNumber.value);
+
+	if(isNaN(inputNumber) || Number.isInteger(inputNumber)==false){
+		alert("Invalid error");
 	}
 	else{
-		number=0;
+		if(sign=="+"){
+			number+=inputNumber;
+		}
+		else if(sign=="-"){
+			number-=inputNumber;
+		}
+		else{
+			number=0;
+		}
 	}
-	document.getElementById('numberInput').value="";
-	text.textContent = number;
+
+	
+	getNumber.value="";
+	displayedNumber.textContent = number;
 }
 
 addButton.addEventListener('click',()=>calculateAndDisplay("+"));
