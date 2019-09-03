@@ -6,17 +6,19 @@ const resetButton = document.getElementById("reset")
 const numberElement = document.getElementById("number")
 const numberInput = document.getElementById("numberInput")
 
+let numberInputValue = 0
+let displayedNumber = 0
 
 plusButton.addEventListener('click', () => {
-    let userInput = parseInt(numberInput.value)
-    let displayNumber = parseInt(numberElement.textContent)
-    numberElement.textContent =  displayNumber + userInput
+    numberInputValue = parseInt(numberInput.value)
+    let displayedNumber = parseInt(numberElement.textContent)
+    numberElement.textContent =  displayedNumber + numberInputValue
     numberInput.value = 0
 })
 minusButton.addEventListener('click', () => {
-    let userInput = parseInt(numberInput.value)
-    let displayNumber = parseInt(numberElement.textContent)
-    numberElement.textContent = displayNumber - userInput
+    numberInputValue = parseInt(numberInput.value)
+    let displayedNumber = parseInt(numberElement.textContent)
+    numberElement.textContent = displayedNumber - numberInputValue
     numberInput.value = 0
 })
 resetButton.addEventListener('click', () => {
