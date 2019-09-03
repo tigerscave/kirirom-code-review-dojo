@@ -11,7 +11,10 @@ let numbers = 0
 
 function calculate(string){
     let numberInputElement = document.getElementById("numberInput").value
-    if (string == "+"){
+    if(isNaN(numberInputElement)){
+        alert("invalid error")
+    }
+    else if (string == "+"){
         numbers = numbers + Number(numberInputElement)
         numberElement.textContent = numbers
     }
@@ -23,7 +26,6 @@ function calculate(string){
 function reset(){
     numbers = 0
     numberElement.textContent = numbers
-    
 }
 
 plusButton.addEventListener("click",() => calculate("+"))
