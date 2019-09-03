@@ -9,10 +9,10 @@ const textResult = document.getElementById('number')
 
 let number = 0
 
-function change(number){
+function changeNumber(number){
     textResult.textContent=number
 }
 
-plusButton.addEventListener('click',()=>change(number++))
-minusButton.addEventListener('click',()=>change(number--))
-resetButton.addEventListener('click',()=>change(number=0))
+plusButton.addEventListener('click',()=>changeNumber(number++))
+minusButton.addEventListener('click',()=>changeNumber(number--))
+resetButton.addEventListener('click',()=>changeNumber(number=0))
