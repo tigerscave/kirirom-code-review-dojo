@@ -6,13 +6,14 @@ const plusButton = document.getElementById('plus')
 const minusButton = document.getElementById('minus')
 const resetButton = document.getElementById('reset')
 const textResult = document.getElementById('number')
+const inputNumber = parseInt(document.getElementById('numberInput').value)
 
 let number = 0 
 let getNumber = 0
 
 function changeOperator(Operator){
   
-    getNumber = parseInt(document.getElementById('numberInput').value)
+    getNumber = inputNumber
     number = textResult
   
     switch(Operator){
@@ -26,7 +27,7 @@ function changeOperator(Operator){
             number = 0
     }
   
-    document.getElementById('numberInput').value = ""
+    inputNumber = ""
     textResult.textContent=number
 }
 
