@@ -8,9 +8,15 @@ document.getElementById('minus').addEventListener('click', () => buttonClicked('
 document.getElementById('reset').addEventListener('click', () => buttonClicked('reset'));
 
 function buttonClicked(operate){
-    var input = inputField.value;
-    var number = numberValue.textContent;
-    if (operate == 'plus') numberValue.textContent = parseInt(number) + parseInt(input);
-    else if (operate == 'minus') numberValue.textContent = parseInt(number) - parseInt(input);
-    else if (operate == 'reset') numberValue.textContent = 0;
+    var input = parseInt(inputField.value);
+    var number = parseInt(numberValue.textContent);
+    if ( isNaN(input) || isNaN(number)){
+        alert('Invalid error!');
+    }
+    else{
+        if (operate == 'plus') numberValue.textContent = number + input;
+        else if (operate == 'minus') numberValue.textContent = number - input;
+        else if (operate == 'reset') numberValue.textContent = 0;        
+    }    
+    inputField.value = '';
 }
