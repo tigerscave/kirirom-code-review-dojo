@@ -1,7 +1,7 @@
 "use strict"
 
 //write code in here
-const number = document.getElementById("number")
+const numberElement = document.getElementById("number")
 const numberInput = document.getElementById("numberInput")
 const plusBtn = document.getElementById("plus")
 const minusBtn = document.getElementById("minus")
@@ -11,18 +11,18 @@ let inputNumber = 0
 
 plusBtn.addEventListener("click", () => { 
     inputNumber = parseInt(numberInput.value)
-    displayedNumber = parseInt(number.textContent)
-    number.textContent = displayedNumber + inputNumber
+    displayedNumber = parseInt(numberElement.textContent)
+    numberElement.textContent = displayedNumber + inputNumber
     numberInput.value = 0
 })
 
 minusBtn.addEventListener("click", () => { 
     inputNumber = parseInt(numberInput.value)
-    displayedNumber = parseInt(number.textContent)
-    number.textContent = displayedNumber - inputNumber
+    displayedNumber = parseInt(numberElement.textContent)
+    numberElement.textContent = displayedNumber - inputNumber
     numberInput.value = 0
  })
 
 resetBtn.addEventListener("click", () => { 
-    number.textContent = 0
+    numberElement.textContent = 0
     numberInput.textContent = 0 }) 
