@@ -10,7 +10,7 @@ const numberText = document.getElementById("number")
 let n = 0
 
 function changeValue(e){
-    console.log(e.target.id)
+    
     switch(e.target)
     {
         case minusButton:
@@ -23,7 +23,7 @@ function changeValue(e){
             n = 0
             break
     }
-    numberText.innerHTML = n
+    numberText.textContent = n
 }
 
 addButton.addEventListener("click", changeValue)
