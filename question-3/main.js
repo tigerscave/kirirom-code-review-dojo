@@ -12,12 +12,15 @@ let number = parseInt(numberText.textContent)
 
 function changeValue(e){
 
-    let numberInputValue = 0
+    let numberInputValue = parseInt(numberInput.value)
 
-    if(numberInput.value.length == 0){
-        numberInputValue = 1
-    } else {
-        numberInputValue = parseInt(numberInput.value)
+    if(Number.isNaN(numberInputValue)){
+        if (numberInput.value.length == 0){
+            numberInputValue = 1
+        }else{
+            window.alert("It is wrong input")
+            return
+        }
     }
 
     switch(e.target)
