@@ -8,9 +8,13 @@ const minusBtn = document.getElementById("minus")
 const resetBtn = document.getElementById("reset")
 
 function changeNum(number) {
-    textNumber.innerHTML = parseInt(textNumber.innerHTML) + parseInt(number)
+    textNumber.innerHTML = parseInt(textNumber.innerHTML) + number
 }
 
-plusBtn.addEventListener('click', () => { changeNum(input.value) })
-minusBtn.addEventListener('click', () => { changeNum(`-${input.innerHTML}`) })
+plusBtn.addEventListener('click', () => {
+    changeNum(parseInt(input.value))
+})
+minusBtn.addEventListener('click', () => {
+    changeNum(parseInt(input.value) * -1)
+})
 reset.addEventListener('click', () => { textNumber.innerHTML = 0 })
