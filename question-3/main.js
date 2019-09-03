@@ -7,8 +7,8 @@ document.getElementById('minus').addEventListener('click', () => buttonClicked('
 document.getElementById('reset').addEventListener('click', () => buttonClicked('reset'));
 
 function buttonClicked(operate){
-    var input = parseInt(inputField.value);
-    var number = parseInt(numberValue.textContent);
+    let input = parseInt(inputField.value);
+    let number = parseInt(numberValue.textContent);
     
         if (operate == 'reset') 
         {
