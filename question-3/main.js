@@ -10,26 +10,26 @@ let number=0
 // text.textContent=inp
 function change(todo){
     let inp=parseInt(document.getElementById("numberInput").value)
-    console.log(typeof(inp))
+    // console.log(typeof(inp))
     
     if(todo=="add"){
         if(isNaN(inp)){inp=0
             number+=inp
-        console.log(number)
+        // console.log(number)
         text.textContent=number
         }else{
         number+=inp
-        console.log(number)
+        // console.log(number)
         text.textContent=number}
     }
     if(todo=="sub"){
         if(isNaN(inp)){inp=0
             number-=inp
-        console.log(number)
+        // console.log(number)
         text.textContent=number
         }else{
         number-=inp
-        console.log(number)
+        // console.log(number)
         text.textContent=number
         }
     }
