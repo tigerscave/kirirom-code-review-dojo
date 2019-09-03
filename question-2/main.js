@@ -1,13 +1,13 @@
-var a = 0;
+let numbers = 0;
 document.getElementById('plus').addEventListener("click", function(){
-  a++;
-  document.getElementById('number').innerHTML = a;
+  numbers++;
+  document.getElementById('number').innerHTML = numbers;
 })
 document.getElementById('minus').addEventListener("click", function(){
-  a--;
-  document.getElementById('number').innerHTML = a;
+  numbers--;
+  document.getElementById('number').innerHTML = numbers;
 })
 document.getElementById('reset').addEventListener("click", function(){
-  a=0;
-  document.getElementById('number').innerHTML = a;
+  numbers=0;
+  document.getElementById('number').innerHTML = numbers;
 })
