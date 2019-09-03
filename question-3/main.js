@@ -7,17 +7,14 @@ const minusButton = document.getElementById('minus')
 const resetButton = document.getElementById('reset')
 const numberLabel = document.getElementById('number')
 const inputElement = document.getElementById('numberInput')
-let number = 0
 
 function plus(){
-  number = parseInt(numberLabel.textContent)
-  numberLabel.textContent = number + parseInt(inputElement.value)
+  numberLabel.textContent = parseInt(numberLabel.textContent) + parseInt(inputElement.value)
   inputElement.value = ''
 }
 
 function minus(){
-  number = parseInt(numberLabel.textContent)
-  numberLabel.textContent = number - parseInt(inputElement.value)
+  numberLabel.textContent = parseInt(numberLabel.textContent) - parseInt(inputElement.value)
   inputElement.value = ''
 }
 
