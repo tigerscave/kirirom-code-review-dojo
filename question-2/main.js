@@ -1,5 +1,4 @@
 "use strict"
-"use strict"
 
 //write code in here
 const textNumber = document.getElementById("number")
