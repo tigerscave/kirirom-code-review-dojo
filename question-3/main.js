@@ -8,17 +8,17 @@ function operation(operator)
 	let input = document.getElementById('numberInput')
 	if(operator == "plus")
 	{
-		number.textContent = parseInt(number.textContent) + parseInt(input.value)
+		numberElement.textContent = parseInt(numberElement.textContent) + parseInt(input.value)
 		input.value = ""
 	}
 	else if(operator == "minus")
 	{
-		number.textContent = parseInt(number.textContent) - parseInt(input.value)
+		numberElement.textContent = parseInt(numberElement.textContent) - parseInt(input.value)
 		input.value = ""
 	}
 	else if(operator == "reset")
 	{
-		number.textContent = 0
+		numberElement.textContent = 0
 		input.value = ""
 	}
 }
