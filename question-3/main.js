@@ -12,11 +12,13 @@ let number = 0
 function plus(){
   number = parseInt(numberLabel.textContent)
   numberLabel.textContent = number + parseInt(inputElement.value)
+  inputElement.value = ''
 }
 
 function minus(){
   number = parseInt(numberLabel.textContent)
   numberLabel.textContent = number - parseInt(inputElement.value)
+  inputElement.value = ''
 }
 
 function reset(){
