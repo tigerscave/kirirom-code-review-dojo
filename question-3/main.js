@@ -13,6 +13,7 @@ resetBtn.addEventListener('click', reset);
 
 function reset () {
   textView.textContent = 0;
+  editTextValue.value = '';
 }
 
 let currNum = 0;
