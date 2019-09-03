@@ -8,17 +8,17 @@ const numberElement = document.getElementById("number")
 let number = 0
 
 function changeNumber(text){
-    if(text==="+")
+    if(text === "+")
     {
-        numberElement.textContent=++number
+        numberElement.textContent = ++number
     }
-    else if(text==="-")
+    else if(text === "-")
     {
-        numberElement.textContent=--number
+        numberElement.textContent = --number
     }
     else
     {
-        numberElement.textContent=0
+        numberElement.textContent = 0
     }
 }
 
