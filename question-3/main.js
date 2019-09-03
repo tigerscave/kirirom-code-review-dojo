@@ -21,7 +21,7 @@ minusBtn.addEventListener("click", () => {
     displayedNumber = parseInt(numberElement.textContent)
     numberElement.textContent = displayedNumber - inputNumber
     numberInput.value = 0
- })
+})
 
 resetBtn.addEventListener("click", () => { 
     numberElement.textContent = 0
