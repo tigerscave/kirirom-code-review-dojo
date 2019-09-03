@@ -11,31 +11,18 @@ const plusBtn = getElement("plus")
 const minusBtn = getElement("minus")
 const resetBtn = getElement("reset")
 
-function changeNumber(operator,step){
+function changeNumber(step){
     //Set up varibles
-    if (step == "") {
-        step = 0
-    } else {
-        step = parseInt(step)
+    if (isNaN(step) || step === ""){
+        return alert("Invalid Input!")
     }
 
     let currentNum = parseInt(numberText.innerHTML)
-
-    switch(operator){
-        case "+" :
-            numberText.innerHTML = currentNum + step
-            break;
-
-        case "-" :
-            numberText.innerHTML = currentNum - step
-            break;
-        case "reset" :
-            numberText.innerHTML = step
-            break;
-    }
+    numberText.innerHTML = currentNum + step
     inputBox.value = ""
+
 }
 
-plusBtn.addEventListener("click", ()=>changeNumber("+",inputBox.value))
-minusBtn.addEventListener("click", ()=>changeNumber("-",inputBox.value))
-resetBtn.addEventListener("click", ()=>changeNumber("reset",0))
+plusBtn.addEventListener("click", ()=>changeNumber(parseInt(inputBox.value)))
+minusBtn.addEventListener("click", ()=>changeNumber(parseInt(inputBox.value) * -1))
+resetBtn.addEventListener("click", ()=>numberText.innerHTML = 0)
