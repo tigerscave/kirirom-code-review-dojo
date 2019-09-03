@@ -8,7 +8,7 @@ const textView = document.getElementById('number');
 plusBtn.addEventListener('click', plusNum);
 minusBtn.addEventListener('click', minusNum);
 resetBtn.addEventListener('click', reset);
-num=0 
+let num=0 
 function reset () {
   textView.textContent = 0;
 }
