@@ -25,7 +25,6 @@ function calculateAndDisplay(sign){
 			number=0;
 		}
 	}
-
 	
 	getNumber.value="";
 	displayedNumber.textContent = number;
