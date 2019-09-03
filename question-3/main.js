@@ -14,10 +14,11 @@ function changeValue(e){
 
     let numberInputValue = 0
 
-    if(numberInput.value.length == 0)
+    if(numberInput.value.length == 0){
         numberInputValue = 1
-    else
+    } else {
         numberInputValue = parseInt(numberInput.value)
+    }
 
     switch(e.target)
     {
@@ -27,11 +28,10 @@ function changeValue(e){
         case addButton:
             number += numberInputValue
             break
-        case resetButton:{
+        case resetButton:
             number = 0
             numberInput.value = ""
             break
-        }
     }
 
     numberText.textContent = number
