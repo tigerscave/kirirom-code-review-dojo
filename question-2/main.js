@@ -2,10 +2,10 @@
 
 //write code in here
 
-const minus = document.getElementById("minus")
-const add = document.getElementById("plus")
-const reset = document.getElementById("reset")
-const number = document.getElementById("number")
+const minusButton = document.getElementById("minus")
+const addButton = document.getElementById("plus")
+const resetButton = document.getElementById("reset")
+const numberText = document.getElementById("number")
 var n = 0
 
 function clicked(id){
@@ -21,9 +21,9 @@ function clicked(id){
             n = 0
             break
     }
-    number.innerHTML = n
+    numberText.innerHTML = n
 }
 
-add.addEventListener("click", () => clicked("add"))
-minus.addEventListener("click", () => clicked("minus"))
-reset.addEventListener("click", () => clicked("reset"))
+addButton.addEventListener("click", () => clicked("add"))
+minusButton.addEventListener("click", () => clicked("minus"))
+resetButton.addEventListener("click", () => clicked("reset"))
