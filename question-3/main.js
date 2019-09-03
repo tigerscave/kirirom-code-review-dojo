@@ -6,17 +6,17 @@ const input = document.getElementById('numberInput')
 
 function operation(operator)
 {
-	if(operator == "plus")
+	if(operator === "plus")
 	{
 		numberElement.textContent = parseInt(numberElement.textContent) + parseInt(input.value)
 		input.value = ""
 	}
-	else if(operator == "minus")
+	else if(operator === "minus")
 	{
 		numberElement.textContent = parseInt(numberElement.textContent) - parseInt(input.value)
 		input.value = ""
 	}
-	else if(operator == "reset")
+	else if(operator === "reset")
 	{
 		numberElement.textContent = 0
 		input.value = ""
