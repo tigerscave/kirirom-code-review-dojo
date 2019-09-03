@@ -6,10 +6,25 @@ const appleButton = document.getElementById('apple')
 
 const bananaButton = document.getElementById('banana')
 
-const textElement = document.getElementById('text')
+const orangeButton = document.getElementById('orange')
 
+const resetButton = document.getElementById('reset')
+
+const textElement = document.getElementById('text')
+/*
 function appleButtonClick(){
-  alert('hello apple')
+  textElement.textContent = "APPLE"
 }
 
-appleButton addEventListener('click', appleButtonClick)
+function appleButtonClick(){
+  textElement.textContent = "APPLE"
+}*/
+
+function changeText(text){
+  textElement.textContent = text;
+}
+
+appleButton addEventListener('click',() => changeText('APPLE'))
+bananaButton addEventListener('click',() => changeText('BANANA'))
+orangeButton addEventListener('click',() => changeText('ORANGE'))
+resetButton addEventListener('click',() => changeText('-'))
