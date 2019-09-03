@@ -9,8 +9,9 @@ const numberText = document.getElementById("number")
 
 let n = 0
 
-function changeVaule(operationButton){
-    switch(operationButton)
+function changeValue(e){
+    console.log(e.target.id)
+    switch(e.target)
     {
         case minusButton:
             n--
@@ -25,6 +26,6 @@ function changeVaule(operationButton){
     numberText.innerHTML = n
 }
 
-addButton.addEventListener("click", () => changeVaule(addButton))
-minusButton.addEventListener("click", () => changeVaule(minusButton))
-resetButton.addEventListener("click", () => changeVaule(resetButton))
+addButton.addEventListener("click", changeValue)
+minusButton.addEventListener("click", changeValue)
+resetButton.addEventListener("click", changeValue)
