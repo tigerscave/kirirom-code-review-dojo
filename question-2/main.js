@@ -11,10 +11,10 @@ let number = 0
 function changeValue(operation){
     switch(operation){
         case plusButton:
-            number+=1
+            number += 1
             break
         case minusButton:
-            number-=1
+            number -= 1
             break
         case resetButton:
             number = 0
