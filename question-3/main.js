@@ -11,13 +11,13 @@ let displayedNumber = 0
 
 plusButton.addEventListener('click', () => {
     numberInputValue = parseInt(numberInput.value)
-    let displayedNumber = parseInt(numberElement.textContent)
+    displayedNumber = parseInt(numberElement.textContent)
     numberElement.textContent =  displayedNumber + numberInputValue
     numberInput.value = 0
 })
 minusButton.addEventListener('click', () => {
     numberInputValue = parseInt(numberInput.value)
-    let displayedNumber = parseInt(numberElement.textContent)
+    displayedNumber = parseInt(numberElement.textContent)
     numberElement.textContent = displayedNumber - numberInputValue
     numberInput.value = 0
 })
