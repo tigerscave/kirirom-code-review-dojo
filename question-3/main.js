@@ -21,6 +21,7 @@ minusButton.addEventListener('click', () => {
 })
 resetButton.addEventListener('click', () => {
     numberElement.textContent = 0
+    numberInput.value = 0
 })
 
 // write conde in here
