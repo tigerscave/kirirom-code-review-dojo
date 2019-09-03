@@ -30,9 +30,8 @@ function changeValue(e){
         case resetButton:{
             number = 0
             numberInput.value = ""
-        }
-            
             break
+        }
     }
     numberText.textContent = number
 }
