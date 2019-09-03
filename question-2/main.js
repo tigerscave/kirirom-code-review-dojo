@@ -1,13 +1,16 @@
-let numbers = 0;
+let number = 0;
 document.getElementById('plus').addEventListener("click", function(){
-  numbers++;
-  document.getElementById('number').innerHTML = numbers;
+  number++;
+  calculate("add");
 })
 document.getElementById('minus').addEventListener("click", function(){
-  numbers--;
-  document.getElementById('number').innerHTML = numbers;
+  number--;
+  calculate("add");
 })
 document.getElementById('reset').addEventListener("click", function(){
-  numbers=0;
-  document.getElementById('number').innerHTML = numbers;
+  number = 0;
+  calculate("add");
 })
+function calculate(x){
+    document.getElementById('number').innerHTML = number;
+}
