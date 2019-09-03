@@ -8,7 +8,7 @@ const resetButton = document.getElementById('reset')
 const textElement = document.getElementById('number')
 
 let number = 0
-function ChangeValue(operation){
+function changeValue(operation){
     switch(operation){
         case plusButton:
             number+=1
@@ -23,6 +23,6 @@ function ChangeValue(operation){
 
 }
 
-plusButton.addEventListener('click', () => ChangeValue(plusButton))
-minusButton.addEventListener('click', () => ChangeValue(minusButton))
-resetButton.addEventListener('click',() => ChangeValue(resetButton))
+plusButton.addEventListener('click', () => changeValue(plusButton))
+minusButton.addEventListener('click', () => changeValue(minusButton))
+resetButton.addEventListener('click',() => changeValue(resetButton))
