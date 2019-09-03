@@ -4,7 +4,7 @@ const resetButton = document.getElementById('reset')
 const numberElement = document.getElementById('number')
 const input = document.getElementById('numberInput')
 
-function operation(operator)
+function operate(operator)
 {
 	if(operator === "plus")
 	{
@@ -23,6 +23,6 @@ function operation(operator)
 	}
 }
 
-plusButton.addEventListener('click', () => operation("plus"))
-minusButton.addEventListener('click', () => operation("minus"))
-resetButton.addEventListener('click', () => operation("reset"))
+plusButton.addEventListener('click', () => operate("plus"))
+minusButton.addEventListener('click', () => operate("minus"))
+resetButton.addEventListener('click', () => operate("reset"))
