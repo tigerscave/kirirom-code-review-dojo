@@ -8,6 +8,9 @@ const minusBtn = document.getElementById("minus")
 const resetBtn = document.getElementById("reset")
 
 function changeNum(number) {
+    if (isNaN(number)) {
+        return alert('Invalid error')
+    }
     textNumber.innerHTML = parseInt(textNumber.innerHTML) + number
 }
 
