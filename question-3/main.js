@@ -6,32 +6,28 @@ const plusBtn = document.getElementById("plus");
 const minusBtn = document.getElementById("minus");
 const resetBtn = document.getElementById("reset");
 const numberInput = document.getElementById("numberInput");
-let number = 0;
+let resultNumber = 0;
 
 plusBtn.addEventListener("click", () => {
     if (numberInput.value != "") {
-        number += parseInt(numberInput.value);
-        resetInputAndshowNumber(number);
+        resultNumber += parseInt(numberInput.value);
+        resetInputAndShowNumber(number);
     }
 });
 
 minusBtn.addEventListener("click", () => {
     if (numberInput.value != "") {
-        number -= parseInt(numberInput.value);
-        resetInputAndshowNumber(number);
+        resultNumber -= parseInt(numberInput.value);
+        resetInputAndShowNumber(number);
     }
 });
 
 resetBtn.addEventListener("click", () => {
-    if (number.value != "") {
-        number = 0;
-        resetInputAndshowNumber(number);
-    }
+    resultNumber = 0;
+    resetInputAndShowNumber(resultNumber);
 });
 
-function resetInputAndshowNumber(number) {
-    numberElement.textContent = number;
+function resetInputAndShowNumber(number) {
+    numberElement.textContent = resultNumber;
     numberInput.value = '';
 }
-
-
