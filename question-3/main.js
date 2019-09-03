@@ -11,14 +11,14 @@ let resultNumber = 0;
 plusBtn.addEventListener("click", () => {
     if (numberInput.value != "") {
         resultNumber += parseInt(numberInput.value);
-        resetInputAndShowNumber(number);
+        resetInputAndShowNumber(resultNumber);
     }
 });
 
 minusBtn.addEventListener("click", () => {
     if (numberInput.value != "") {
         resultNumber -= parseInt(numberInput.value);
-        resetInputAndShowNumber(number);
+        resetInputAndShowNumber(resultNumber);
     }
 });
 
@@ -27,7 +27,7 @@ resetBtn.addEventListener("click", () => {
     resetInputAndShowNumber(resultNumber);
 });
 
-function resetInputAndShowNumber(number) {
+function resetInputAndShowNumber(resultNumber) {
     numberElement.textContent = resultNumber;
     numberInput.value = '';
-}
+};
