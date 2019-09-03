@@ -3,7 +3,7 @@ const decreaseButton = document.getElementById('minus');
 const resetButton = document.getElementById('reset');
 const text = document.getElementById('number');
 
-var number = parseInt(document.getElementById('number').innerText);
+let number = parseInt(document.getElementById('number').innerText);
 
 function displayResult(number){
 	text.textContent = number;
