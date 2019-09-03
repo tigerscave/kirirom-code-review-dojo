@@ -7,8 +7,8 @@ let number = parseInt(document.getElementById('number').innerText);
 
 function displayResult(number){
 	text.textContent = number;
-
 }
+
 increaseButton.addEventListener('click',()=>displayResult(number+=1));
 decreaseButton.addEventListener('click',()=>displayResult(number-=1));
 resetButton.addEventListener('click',()=>displayResult(0));
