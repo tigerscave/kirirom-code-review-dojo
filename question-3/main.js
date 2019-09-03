@@ -2,12 +2,13 @@ const plusButton = document.getElementById('plus')
 const minusButton = document.getElementById('minus')
 const resetButton = document.getElementById('reset')
 const textResult = document.getElementById('number')
+const inputNumber = document.getElementById('numberInput').value
 
 let number = 0 
 let getNumber = 0
 
 function changeOperator(operator){
-    getNumber=parseInt(document.getElementById('numberInput').value)
+    getNumber=parseInt(inputNumber)
     number=parseInt(textResult.innerText)
     switch(operator){
         case '+':
@@ -19,7 +20,7 @@ function changeOperator(operator){
         case 'reset':
             number=0
     }
-    document.getElementById('numberInput').value=""
+    inputNumber=""
     textResult.textContent=number
 }
 plusButton.addEventListener('click',()=>changeOperator('+'))
