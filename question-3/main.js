@@ -10,13 +10,11 @@ let number = 0;
 
 plusBtn.addEventListener("click", () => {
     number += parseInt(numberInput.value);
-    // numberInput.style.display = "none";
     numberElement.textContent = number;
 });
 
 minusBtn.addEventListener("click", () => {
     number -= parseInt(numberInput.value);
-    // numberInput.style.display = "non/e";
     numberElement.textContent = number;
 });
 
@@ -25,8 +23,6 @@ resetBtn.addEventListener("click", () => {
     numberInput.value = "";
     numberElement.textContent = number;
 })
-// resetBtn.addEventListener("clic")
 
 
 
-// minusBtn.addEventListener("")
