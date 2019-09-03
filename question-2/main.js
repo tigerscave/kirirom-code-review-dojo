@@ -6,24 +6,25 @@ const minusButton = document.getElementById("minus")
 const addButton = document.getElementById("plus")
 const resetButton = document.getElementById("reset")
 const numberText = document.getElementById("number")
+
 var n = 0
 
-function clicked(id){
-    switch(id)
+function ChangeVaule(operation){
+    switch(operation)
     {
-        case "minus":
+        case minusButton:
             n--
             break
-        case "add":
+        case addButton:
             n++
             break
-        case "reset":
+        case resetButton:
             n = 0
             break
     }
     numberText.innerHTML = n
 }
 
-addButton.addEventListener("click", () => clicked("add"))
-minusButton.addEventListener("click", () => clicked("minus"))
-resetButton.addEventListener("click", () => clicked("reset"))
+addButton.addEventListener("click", () => ChangeVaule(addButton))
+minusButton.addEventListener("click", () => ChangeVaule(minusButton))
+resetButton.addEventListener("click", () => ChangeVaule(resetButton))
