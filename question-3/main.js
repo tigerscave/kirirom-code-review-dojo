@@ -9,14 +9,14 @@ const numberInput = document.getElementById("numberInput");
 let resultNumber = 0;
 
 plusBtn.addEventListener("click", () => {
-    if (numberInput.value != "") {
+    if (validateNumberInput(numberInput)) {
         resultNumber += parseInt(numberInput.value);
         resetInputAndShowNumber(resultNumber);
     }
 });
 
 minusBtn.addEventListener("click", () => {
-    if (numberInput.value != "") {
+    if (validateNumberInput(numberInput)) {
         resultNumber -= parseInt(numberInput.value);
         resetInputAndShowNumber(resultNumber);
     }
@@ -25,9 +25,18 @@ minusBtn.addEventListener("click", () => {
 resetBtn.addEventListener("click", () => {
     resultNumber = 0;
     resetInputAndShowNumber(resultNumber);
+
 });
 
 function resetInputAndShowNumber(resultNumber) {
     numberElement.textContent = resultNumber;
     numberInput.value = '';
 };
+
+function validateNumberInput(numberInput) {
+    if (isNaN(numberInput.value)) {
+        alert("Invalid Error");
+    } else if (numberInput.value != "") {
+        return true
+    }
+}
