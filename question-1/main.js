@@ -2,9 +2,10 @@
 
 // write conde in here
 const appleButton = document.getElementById("apple");
-const bananaButton = document.getElementById("button");
+const bananaButton = document.getElementById("banana");
 const orangeBtn = document.getElementById("orange");
 const resetBtn = document.getElementById("reset");
+
 const textElement = document.getElementById("text");
 
 
