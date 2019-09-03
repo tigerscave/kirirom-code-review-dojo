@@ -4,15 +4,15 @@ const minusbutton = document.getElementById("minus")
 const resetbutton = document.getElementById("reset")
 const numberbutton = document.getElementById("number")
 
-function buttonClick(res)
+function buttonClick(operation)
 {
-    if(res=='plus'){
+    if(operation=='plus'){
         numberbutton.textContent = parseInt(numberbutton.innerHTML)+1
     }
-    else if (res == 'minus'){
+    else if (operation == 'minus'){
         numberbutton.textContent = parseInt(numberbutton.innerHTML)-1
     }
-    else if (res == 'reset'){
+    else if (operation == 'reset'){
         numberbutton.textContent = 0
 
     }
