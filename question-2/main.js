@@ -9,8 +9,8 @@ const numberText = document.getElementById("number")
 
 var n = 0
 
-function ChangeVaule(operation){
-    switch(operation)
+function ChangeVaule(operationButton){
+    switch(operationButton)
     {
         case minusButton:
             n--
