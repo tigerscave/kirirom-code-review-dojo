@@ -13,7 +13,12 @@ const resetBtn = getElement("reset")
 
 function changeNumber(operator,step){
     //Set up varibles
-    if (step == "") step = 0 ; else step = parseInt(step)
+    if (step == "") {
+        step = 0
+    } else {
+        step = parseInt(step)
+    }
+
     let currentNum = parseInt(numberText.innerHTML)
 
     switch(operator){
