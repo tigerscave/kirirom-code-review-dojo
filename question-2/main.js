@@ -8,5 +8,5 @@ function changeNumber(number){
 }
 plusButton.addEventListener('click',()=>changeNumber(number++))
 minusButton.addEventListener('click',()=>changeNumber(number--))
-resetButton.addEventListener('click',()=>changeNumber(number=0))
+resetButton.addEventListener('click',()=>changeNumber(0))
 
