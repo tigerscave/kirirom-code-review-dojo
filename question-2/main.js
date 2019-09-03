@@ -1,11 +1,12 @@
 const plusButton = document.getElementById('plus')
 const minusButton = document.getElementById('minus')
 const resetButton = document.getElementById('reset')
-const textElement = document.getElementById('number')
-var number = 0
-function change(number){
-    textElement.textContent=number
+const textResult = document.getElementById('number')
+let number = 0
+function changeNumber(number){
+    textResult.textContent=number
 }
-plusButton.addEventListener('click',()=>change(number++))
-minusButton.addEventListener('click',()=>change(number--))
-resetButton.addEventListener('click',()=>change(number
+plusButton.addEventListener('click',()=>changeNumber(number++))
+minusButton.addEventListener('click',()=>changeNumber(number--))
+resetButton.addEventListener('click',()=>changeNumber(number=0))
+
