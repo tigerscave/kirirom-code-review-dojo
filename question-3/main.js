@@ -10,8 +10,8 @@ const numberInput = document.getElementById("numberInput")
 
 let number = parseInt(numberText.textContent)
 
-
 function changeValue(e){
+
     let numberInputValue = 0
 
     if(numberInput.value.length == 0)
@@ -33,6 +33,7 @@ function changeValue(e){
             break
         }
     }
+
     numberText.textContent = number
 }
 
