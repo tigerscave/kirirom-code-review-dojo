@@ -9,21 +9,33 @@ const resetBtn = document.getElementById("reset")
 let displayedNumber = 0
 let inputNumber = 0
 
-plusBtn.addEventListener("click", () => { 
+
+plusBtn.addEventListener("click", () => {
     inputNumber = parseInt(numberInput.value)
     displayedNumber = parseInt(numberElement.textContent)
-    numberElement.textContent = displayedNumber + inputNumber
-    numberInput.value = 0
+    if(isNaN(inputNumber)){
+        alert("Invalid error")
+    }
+    else{
+        numberElement.textContent = displayedNumber + inputNumber
+        numberInput.value = 0
+    }
 })
 
 minusBtn.addEventListener("click", () => { 
     inputNumber = parseInt(numberInput.value)
     displayedNumber = parseInt(numberElement.textContent)
-    numberElement.textContent = displayedNumber - inputNumber
-    numberInput.value = 0
+    if(isNaN(inputNumber)){
+        alert("Invalid error")
+    }
+    else{
+        numberElement.textContent = displayedNumber - inputNumber
+        numberInput.value = 0
+    }
 })
 
 resetBtn.addEventListener("click", () => { 
     numberElement.textContent = 0
     numberInput.textContent = 0 
 }) 
+
