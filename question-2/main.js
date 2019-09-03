@@ -6,14 +6,15 @@ const plusButton = document.getElementById('plus')
 const minusButton = document.getElementById('minus')
 const resetButton = document.getElementById('reset')
 const numberLabel = document.getElementById('number')
+let number = 0
 
 function plus(){
-  let number = parseInt(numberLabel.textContent)
+  number = parseInt(numberLabel.textContent)
   numberLabel.textContent = number+1
 }
 
 function minus(){
-  let number = parseInt(numberLabel.textContent)
+  number = parseInt(numberLabel.textContent)
   numberLabel.textContent = number-1
 }
 
