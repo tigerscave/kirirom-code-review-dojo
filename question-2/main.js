@@ -6,7 +6,7 @@ const resetBtn = document.getElementById('reset');
 const textView = document.getElementById('number');
 
 plusBtn.addEventListener('click', () => plusNum());
-minusBtn.addEventListener('click', () => MinusNum());
+minusBtn.addEventListener('click', () => minusNum());
 resetBtn.addEventListener('click', reset);
 
 function reset () {
@@ -16,7 +16,7 @@ function plusNum () {
   let num = parseInt(textView.textContent);
   textView.textContent = num + 1;
 }
-function MinusNum () {
+function minusNum () {
   let num = parseInt(textView.textContent);
   textView.textContent = num - 1;
 }
