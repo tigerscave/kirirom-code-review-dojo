@@ -6,7 +6,7 @@ const minusBtn = document.getElementById('minus');
 const resetBtn = document.getElementById('reset');
 const textView = document.getElementById('number');
 const textInput = document.getElementById('numberInput');
-const validator = /[0-9]+$/g;
+const validator = /^[0-9]+$/g;
 
 plusBtn.addEventListener('click', addNum);
 minusBtn.addEventListener('click', subtractNum);
