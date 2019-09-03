@@ -9,20 +9,29 @@ const numberInput = document.getElementById("numberInput");
 let number = 0;
 
 plusBtn.addEventListener("click", () => {
-    number += parseInt(numberInput.value);
-    numberElement.textContent = number;
+    if (numberInput.value != "") {
+        number += parseInt(numberInput.value);
+        resetInputAndshowNumber(number);
+    }
 });
 
 minusBtn.addEventListener("click", () => {
-    number -= parseInt(numberInput.value);
-    numberElement.textContent = number;
+    if (numberInput.value != "") {
+        number -= parseInt(numberInput.value);
+        resetInputAndshowNumber(number);
+    }
 });
 
 resetBtn.addEventListener("click", () => {
-    number = 0;
-    numberInput.value = "";
-    numberElement.textContent = number;
-})
+    if (number.value != "") {
+        number = 0;
+        resetInputAndshowNumber(number);
+    }
+});
 
+function resetInputAndshowNumber(number) {
+    numberElement.textContent = number;
+    numberInput.value = '';
+}
 
 
