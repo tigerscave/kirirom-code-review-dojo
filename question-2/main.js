@@ -1,5 +1,4 @@
 'use strict';
-
 // write code in here
 const plusBtn = document.getElementById('plus');
 const minusBtn = document.getElementById('minus');
@@ -22,5 +21,3 @@ function plusNum() {
 function minusNum() {
   num = parseInt(textView.textContent);
   textView.textContent = num - 1;
-}
-// write code in here
